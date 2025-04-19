@@ -1,6 +1,6 @@
 env                      = "prod"
-zone_id                  = "Z08061862LBZAM174JIHO"
-port_no_of_node_exporter = "9100"
+zone_id                  = "Z049695610O5R6V4I48RH"
+# port_no_of_node_exporter = "9100"
 
 components = {
   mysql = {
@@ -25,4 +25,4 @@ components = {
   }
 }
 
-prometheus_server = ["172.31.1.69/32"]
+# prometheus_server = ["172.31.1.69/32"]
