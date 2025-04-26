@@ -1,5 +1,14 @@
 env                      = "dev"
 zone_id                  = "Z049695610O5R6V4I48RH"
+
+data "aws_ami" "main" {
+  most_recent = true
+
+  owners = ["self"]
+  tags = {
+    Name = "b59-learning-ami-with-ansible"
+  }
+}
 # port_no_of_node_exporter = "9100"
 
 components = {
