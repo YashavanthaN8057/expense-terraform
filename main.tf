@@ -34,7 +34,7 @@ module "mysql" {
   name                     = var.components["mysql"]["name"]
   port_no                  = var.components["mysql"]["port_no"]
   port_no_of_ssh           = var.components["mysql"]["port_no_of_ssh"]
-  # port_no_of_node_exporter = var.port_no_of_node_exporter
   token                    = var.token
+  # port_no_of_node_exporter = var.port_no_of_node_exporter
   # prometheus_server        = var.prometheus_server
 }
