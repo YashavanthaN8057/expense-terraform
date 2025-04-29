@@ -25,4 +25,10 @@ components = {
   }
 }
 
-prometheus_server = ["172.31.1.69/32"]
+# Use a /32 CIDR block when:
+
+# You want to allow access only from a specific Prometheus server.
+
+# You’re tightly locking down access to services like EC2, RDS, or node exporters.
+
+prometheus_server = ["prometheus.cloudcera.shop/32"]
