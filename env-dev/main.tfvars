@@ -31,4 +31,4 @@ components = {
 
 # You’re tightly locking down access to services like EC2, RDS, or node exporters.
 
-prometheus_server = [prometheus.cloudcera.shop/32]
+var.prometheus_server = [prometheus.cloudcera.shop/32]
