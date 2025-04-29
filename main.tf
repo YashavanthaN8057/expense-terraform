@@ -8,8 +8,8 @@ module "frontend" {
   port_no                  = var.components["frontend"]["port_no"]
   port_no_of_ssh           = var.components["frontend"]["port_no_of_ssh"]
   token                    = var.token
-  # prometheus_server        = var.prometheus_server
-  # port_no_of_node_exporter = var.port_no_of_node_exporter
+  prometheus_server        = var.prometheus_server
+  port_no_of_node_exporter = var.port_no_of_node_exporter
 }
 
 module "backend" {
@@ -22,8 +22,8 @@ module "backend" {
   port_no                  = var.components["backend"]["port_no"]
   port_no_of_ssh           = var.components["backend"]["port_no_of_ssh"]
   token                    = var.token
-  # prometheus_server        = var.prometheus_server
-  # port_no_of_node_exporter = var.port_no_of_node_exporter
+  prometheus_server        = var.prometheus_server
+  port_no_of_node_exporter = var.port_no_of_node_exporter
 }
 
 module "mysql" {
@@ -35,6 +35,6 @@ module "mysql" {
   port_no                  = var.components["mysql"]["port_no"]
   port_no_of_ssh           = var.components["mysql"]["port_no_of_ssh"]
   token                    = var.token
-  # port_no_of_node_exporter = var.port_no_of_node_exporter
-  # prometheus_server        = var.prometheus_server
+  port_no_of_node_exporter = var.port_no_of_node_exporter
+  prometheus_server        = var.prometheus_server
 }
